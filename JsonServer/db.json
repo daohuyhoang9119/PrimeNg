@@ -1,0 +1,57 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Note số 1",
+      "note": "Hôm nay đi chợ",
+      "author": "Huy Nguyễn",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Note số 2",
+      "note": "Chào mọi người",
+      "author": "Huy Nguyễn",
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "title": "Note số 1",
+      "note": "Hello",
+      "author": "Huy",
+      "authorId": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment 2",
+      "postId": 2
+    },
+    {
+      "body": "some comment 3",
+      "postId": 3,
+      "id": 3
+    },
+    {
+      "body": "Đây là message số 4",
+      "postId": 1,
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,37 +1,23 @@
-<p-menubar [model]="items"></p-menubar>
-<h3>Learn how to use primeNg in Angular</h3>
-
-<button pButton type="button" label="Click"></button>
-<br />
-<br />
-<p-button label="Click"></p-button>
-<br />
-<br />
-<p-card
-  header="Advanced Card"
-  subheader="Card Subheader"
-  [style]="{ width: '360px' }"
-  styleClass="p-card-shadow"
->
-  <ng-template pTemplate="header">
-    <img
-      alt="Card"
-      src="https://media-cdn.laodong.vn/Storage/NewsPortal/2021/10/30/969136/Cristiano-Ronaldo4.jpg"
-    />
-  </ng-template>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-    consequuntur error repudiandae numquam deserunt quisquam repellat libero
-    asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-    neque quas!
-  </p>
-  <ng-template pTemplate="footer">
-    <p-button label="Save" icon="pi pi-check"></p-button>
-    <p-button
-      label="Cancel"
-      icon="pi pi-times"
-      styleClass="p-button-secondary"
-      [style]="{ 'margin-left': '.5em' }"
-    ></p-button>
-  </ng-template>
-</p-card>
+<p-tabMenu [model]="items"></p-tabMenu>
+<div class="card">
+  <h5>HHNOTESS</h5>
+  <p-splitter [style]="{ height: '300px' }" styleClass="p-mb-5">
+    <ng-template pTemplate>
+      <div class="p-col p-d-flex p-ai-center p-jc-center">
+        <div *ngFor="let item of notes">
+          <li style="cursor: pointer" (click)="editNote(item)">
+            {{ item.author }} : {{ item.title }}
+          </li>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template pTemplate>
+      <div class="p-col p-d-flex p-ai-center p-jc-center" *ngIf="selectedNote">
+        <!-- <h5>{{ selectedNote.title }}</h5> -->
+        <p-fieldset legend="{{ selectedNote.title }}">
+          <p>{{ selectedNote.note }}</p>
+        </p-fieldset>
+      </div>
+    </ng-template>
+  </p-splitter>
+</div>
