@@ -20,6 +20,27 @@
       "note": "Hello",
       "author": "Huy",
       "authorId": 2
+    },
+    {
+      "id": 4,
+      "title": "Go to market",
+      "note": "hom nay di sieu thi coopmart",
+      "author": "king",
+      "authorId": 1
+    },
+    {
+      "id": 5,
+      "title": "Go to school",
+      "note": "123456dsadnsaasdasda",
+      "author": "king",
+      "authorId": 1
+    },
+    {
+      "id": 6,
+      "title": "dsdas",
+      "note": "dsdsds",
+      "author": "king",
+      "authorId": 1
     }
   ],
   "posts": [
